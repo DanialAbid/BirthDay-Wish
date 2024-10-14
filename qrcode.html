@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Wishes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    }
+
+    .qr-wrapper {
+      display: flex;
+      gap: 40px; /* Spacing between QR code boxes */
+    }
+
+    .qr-box {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .qr-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .qr-box h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .qr-box p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    @media(max-width: 768px) {
+      .qr-wrapper {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="qr-wrapper">
+    <div class="qr-box">
+      <h1>Wish 1</h1>
+      <img src="wish1.png" alt="QR Code 1">
+      <p>Scan the first QR code for Wish 1!</p>
+    </div>
+
+    <div class="qr-box">
+      <h1>Wish 2</h1>
+      <img src="wish2.png" alt="QR Code 2">
+      <p>Scan the second QR code for Wish 2!</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
